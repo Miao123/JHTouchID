@@ -15,6 +15,7 @@
 		DD4496581FD82B0500161B5A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DD4496571FD82B0500161B5A /* main.m */; };
 		DD4496621FD82B0500161B5A /* ____Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = DD4496611FD82B0500161B5A /* ____Tests.m */; };
 		DD44966D1FD82B0500161B5A /* ____UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = DD44966C1FD82B0500161B5A /* ____UITests.m */; };
+		DD44967C1FD82E9600161B5A /* LocalAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD44967B1FD82E9600161B5A /* LocalAuthentication.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		DD4496681FD82B0500161B5A /* 指纹解锁UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "指纹解锁UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD44966C1FD82B0500161B5A /* ____UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "____UITests.m"; sourceTree = "<group>"; };
 		DD44966E1FD82B0500161B5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DD44967B1FD82E9600161B5A /* LocalAuthentication.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LocalAuthentication.framework; path = System/Library/Frameworks/LocalAuthentication.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD44967C1FD82E9600161B5A /* LocalAuthentication.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +88,7 @@
 				DD4496601FD82B0500161B5A /* 指纹解锁Tests */,
 				DD44966B1FD82B0500161B5A /* 指纹解锁UITests */,
 				DD4496461FD82B0500161B5A /* Products */,
+				DD44967A1FD82E9600161B5A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -130,6 +134,14 @@
 				DD44966E1FD82B0500161B5A /* Info.plist */,
 			);
 			path = "指纹解锁UITests";
+			sourceTree = "<group>";
+		};
+		DD44967A1FD82E9600161B5A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DD44967B1FD82E9600161B5A /* LocalAuthentication.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -433,6 +445,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = B7UQ7WHB5T;
 				INFOPLIST_FILE = "指纹解锁/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "MiaoJH.----";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -447,6 +460,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = B7UQ7WHB5T;
 				INFOPLIST_FILE = "指纹解锁/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "MiaoJH.----";
 				PRODUCT_NAME = "$(TARGET_NAME)";
